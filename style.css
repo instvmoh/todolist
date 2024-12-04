@@ -1,0 +1,97 @@
+body {
+  font-family: "Roboto";
+  font-weight: bold;
+  background-color: antiquewhite;
+}
+
+.titre {
+  font-size: 20px;
+  color: rgb(8, 8, 86);
+}
+
+.box {
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  margin-left: 25px;
+  padding-top: 25px;
+  min-width: 300px;
+  width: 100%;
+  max-width: fit-content;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 350px 150px 150px;
+  column-gap: 10px;
+  width: 100%;
+  margin-right: 15px;
+}
+
+.add-button {
+  cursor: pointer;
+  background-color: rgb(237, 157, 8);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.input {
+  color: rgb(81, 79, 79);
+  background-color: rgb(198, 195, 195);
+  border: none;
+}
+
+.date {
+  font-family: "Roboto";
+  border: none;
+}
+
+.input::placeholder {
+  font-family: "Roboto";
+  color: rgb(111, 110, 110);
+  padding-left: 15px;
+}
+
+.date,
+.input,
+.add-button {
+  border-radius: 15px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.add-button:hover {
+  background-color: rgb(200, 130, 0);
+}
+
+.check {
+  color: red;
+  margin-right: 10px;
+}
+
+.js-todo-list {
+  font-family: "Roboto";
+  font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Une seule colonne pour petits écrans */
+  }
+
+  .add-button,
+  .input,
+  .date {
+    width: 100%; /* Utilisation de 100% de la largeur disponible */
+    margin-bottom: 10px;
+  }
+
+  .box {
+    padding: 15px; /* Ajustement de l'intérieur pour les petits écrans */
+    min-width: 280px; /* Largeur minimale sur petits écrans */
+  }
+}
